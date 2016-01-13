@@ -5,11 +5,8 @@ buildscript {
 
     }
     dependencies {
-<<<<<<< HEAD
+
         classpath 'com.android.tools.build:gradle:1.3.0'
-=======
-        classpath 'com.android.tools.build:gradle:0.7.+'
->>>>>>> 61cbfe709662574a203af832c7b732f09d52265f
         classpath 'com.crashlytics.tools.gradle:crashlytics-gradle:1.+'
 
     }
@@ -23,7 +20,6 @@ repositories {
 }
 
 android {
-<<<<<<< HEAD
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
 
@@ -34,18 +30,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-=======
-    compileSdkVersion 19
-    buildToolsVersion "19.0.0"
 
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 19
-    }
-    buildTypes {
-        release {
-            runProguard true
->>>>>>> 61cbfe709662574a203af832c7b732f09d52265f
             proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
         }
     }
@@ -57,7 +42,8 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:support-v4:18.0.0'
+	compile 'com.android.support:support-v4:23+'
     compile 'com.crashlytics.android:crashlytics:1.+'
     compile files('libs/YoutubeAndroidPlayerApi.jar')
 }
+
