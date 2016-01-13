@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/archenemy/Projects/seven_minute_workout_android-master/7 Minutes/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="29ccfbddf99584bddbaab62c0cf50dcd1c564e43">
+        <dex dex="/Users/archenemy/Projects/seven_minute_workout_android-master/7 Minutes/build/intermediates/pre-dexed/defaultFlavor/debug/YouTubeAndroidPlayerApi-6492674dbcd2a5c91fa68d15dac855630a877cd6.jar" />
+    </item>
+    <item
+        jar="/Users/archenemy/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/archenemy/Projects/seven_minute_workout_android-master/7 Minutes/build/intermediates/pre-dexed/defaultFlavor/debug/support-v4-18.0.0-ab70a70073321d6c10c908952ac37d5cd53606fb.jar" />
+    </item>
+    <item
+        jar="/Users/archenemy/.gradle/caches/modules-2/files-2.1/com.crashlytics.android/crashlytics/1.1.13/e821eafa1bf489a26bdb71f95078c26785b37a1/crashlytics-1.1.13.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0e821eafa1bf489a26bdb71f95078c26785b37a1">
+        <dex dex="/Users/archenemy/Projects/seven_minute_workout_android-master/7 Minutes/build/intermediates/pre-dexed/defaultFlavor/debug/crashlytics-1.1.13-1247eafaeab64e5101f977714ce28e1534dbcd18.jar" />
+    </item>
+
+</items>
