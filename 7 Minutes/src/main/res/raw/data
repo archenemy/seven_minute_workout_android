@@ -1,0 +1,58 @@
+{
+  "exercises": [
+    {
+      "name": "Alcal\u00e1 de Henares",
+      "desc": "Les invitar\u00eda a salir al puro aire primaveral para recorrer, juntos, estos espacios y estos tiempos sucesivos -Arquitectura e historia- simbolizadas en unas piedras que son Patrimonio de la Humanidad. --Jos\u00e9 Hierro",
+      "video": "alcala-de-henares",
+      "images": [
+        {
+          "filename": "alcala_casa_cervantes_3.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_casa_cervantes_3.jpg",
+          "description": "Casa Cervantes (3)"
+        },
+        {
+          "filename": "alcala_complutum_1.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_complutum_1.jpg",
+          "description": "Complutum (1)"
+        },
+        {
+          "filename": "alcala_museo_arqueologico_3.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_museo_arqueologico_3.jpg",
+          "description": "Museo Arqueologico (3)"
+        },
+        {
+          "filename": "polaroids_alcala_tejados.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/polaroids_alcala_tejados.jpg",
+          "description": "alcala-tejados"
+        }
+      ]
+    },
+    {
+      "name": "Alcal\u00e1 de Henares",
+      "desc": "Les invitar\u00eda a salir al puro aire primaveral para recorrer, juntos, estos espacios y estos tiempos sucesivos -Arquitectura e historia- simbolizadas en unas piedras que son Patrimonio de la Humanidad. --Jos\u00e9 Hierro",
+      "video": "alcala-de-henares",
+      "images": [
+        {
+          "filename": "alcala_casa_cervantes_3.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_casa_cervantes_3.jpg",
+          "description": "Casa Cervantes (3)"
+        },
+        {
+          "filename": "alcala_complutum_1.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_complutum_1.jpg",
+          "description": "Complutum (1)"
+        },
+        {
+          "filename": "alcala_museo_arqueologico_3.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/alcala_museo_arqueologico_3.jpg",
+          "description": "Museo Arqueologico (3)"
+        },
+        {
+          "filename": "polaroids_alcala_tejados.jpg",
+          "url": "http:\/\/ciudadespatrimonio.dev\/uploads\/polaroids_alcala_tejados.jpg",
+          "description": "alcala-tejados"
+        }
+      ]
+    }
+  ]
+}

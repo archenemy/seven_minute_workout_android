@@ -1,15 +1,26 @@
 package com.michaelcarrano.seven_min_workout;
 
 import com.crashlytics.android.Crashlytics;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent.Workout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -23,11 +34,25 @@ import android.widget.Toast;
  * selections.
  */
 public class WorkoutListActivity extends FragmentActivity implements WorkoutListFragment.Callbacks {
+    public static List<Workout> exercises = new ArrayList<Workout>();
+    public void parse() {
+        Gson gson = new Gson();
 
+            //JsonReader reader = new JsonReader(new InputStreamReader(getAssets().open("data.json")));
+            JsonReader reader = new JsonReader(new InputStreamReader(getResources().openRawResource(R.raw.data)));
+            exercises = gson.fromJson(reader,WorkoutContent.Workout.class);
+            Log.i("PARSE", exercises.toString());
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Crashlytics.start(this);
+
+        parse();
+
+
+
 
         // Add workouts to display
         if (WorkoutContent.WORKOUTS.isEmpty()) {

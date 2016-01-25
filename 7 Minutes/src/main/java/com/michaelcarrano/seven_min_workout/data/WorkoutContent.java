@@ -1,7 +1,13 @@
 package com.michaelcarrano.seven_min_workout.data;
 
+import android.util.Log;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 
 /**
  * WorkoutContent Class provides data about individual Workouts.
@@ -15,9 +21,15 @@ public class WorkoutContent {
      */
     public static List<Workout> WORKOUTS = new ArrayList<Workout>();
 
+
     public static void addWorkout(Workout workout) {
         WORKOUTS.add(workout);
     }
+
+
+
+
+
 
     /**
      * A Workout representing information related to the workout item.
