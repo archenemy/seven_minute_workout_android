@@ -1,5 +1,6 @@
 package com.michaelcarrano.seven_min_workout;
 
+import com.michaelcarrano.seven_min_workout.data.ExerciseContent;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent;
 
 import android.content.Intent;
@@ -26,17 +27,17 @@ public class WorkoutDetailActivity extends FragmentActivity {
 
         // Get the Workout that was selected
         int selected = getIntent().getExtras().getInt(WorkoutDetailFragment.ARG_WORKOUT_POS);
-        WorkoutContent.Workout workout = WorkoutContent.WORKOUTS.get(selected);
+        ExerciseContent.Exercise workout = ExerciseContent.exercises.get(selected);
         Log.i("7min", "Selected: " + selected + " " + workout.name);
 
         // Set the ActionBar title, icon, and up button values.
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setIcon(android.R.color.transparent);
         getActionBar().setTitle(workout.name);
-        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(workout.dark)));
+//        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(workout.dark)));
 
         // Set background color
-        getWindow().getDecorView().setBackgroundColor(Color.parseColor(workout.light));
+//        getWindow().getDecorView().setBackgroundColor(Color.parseColor(workout.light));
 
         // savedInstanceState is non-null when there is fragment state
         // saved from previous configurations of this activity

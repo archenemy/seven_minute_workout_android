@@ -2,9 +2,14 @@ package com.michaelcarrano.seven_min_workout;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+import com.michaelcarrano.seven_min_workout.data.ExerciseContent;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent.Workout;
+
+import com.michaelcarrano.seven_min_workout.data.ExerciseContent;
+import com.michaelcarrano.seven_min_workout.data.ExerciseContent.Exercise;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +24,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,21 +41,19 @@ import java.util.List;
  */
 public class WorkoutListActivity extends FragmentActivity implements WorkoutListFragment.Callbacks {
     public static List<Workout> exercises = new ArrayList<Workout>();
-    public void parse() {
-        Gson gson = new Gson();
 
-            //JsonReader reader = new JsonReader(new InputStreamReader(getAssets().open("data.json")));
-            JsonReader reader = new JsonReader(new InputStreamReader(getResources().openRawResource(R.raw.data)));
-            exercises = gson.fromJson(reader,WorkoutContent.Workout.class);
-            Log.i("PARSE", exercises.toString());
 
-    }
+
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Crashlytics.start(this);
 
-        parse();
+        ExerciseContent.parse(getResources());
 
 
 

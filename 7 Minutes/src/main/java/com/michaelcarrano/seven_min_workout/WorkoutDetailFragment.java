@@ -5,6 +5,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerSupportFragment;
 
 import com.michaelcarrano.seven_min_workout.data.DeveloperKey;
+import com.michaelcarrano.seven_min_workout.data.ExerciseContent;
 import com.michaelcarrano.seven_min_workout.data.WorkoutContent;
 
 import android.graphics.Color;
@@ -32,7 +33,7 @@ public class WorkoutDetailFragment extends Fragment {
     /**
      * The Workout content this fragment is presenting.
      */
-    private WorkoutContent.Workout mWorkout;
+    private ExerciseContent.Exercise mWorkout;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the fragment (e.g. upon
@@ -49,7 +50,7 @@ public class WorkoutDetailFragment extends Fragment {
             // Load the dummy content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
-            mWorkout = WorkoutContent.WORKOUTS.get(getArguments().getInt(ARG_WORKOUT_POS));
+            mWorkout = ExerciseContent.exercises.get(getArguments().getInt(ARG_WORKOUT_POS));
             Log.i("7min", "Frag: " + mWorkout.name);
         }
 
@@ -64,8 +65,7 @@ public class WorkoutDetailFragment extends Fragment {
         // Show the workout content as text in a TextView.
         if (mWorkout != null) {
             TextView content = (TextView) rootView.findViewById(R.id.workout_detail);
-            content.setText(mWorkout.content);
-            content.setTextColor(Color.WHITE);
+            content.setText(mWorkout.desc);
         }
 
         return rootView;

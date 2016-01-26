@@ -72,7 +72,7 @@ public class WorkoutListFragment extends ListFragment {
             setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION));
         }
         // Remove the ListView divider
-        getListView().setDividerHeight(0);
+//        getListView().setDividerHeight(0);
 
         // Restore ListView position
 //        Log.i("7min", "onViewCreated");
