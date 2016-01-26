@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">7 Minute Workout</string>
-    <string name="app_label">Minute Workout</string>
+    <string name="app_name">Starting Stretching</string>
+    <string name="app_label">Starting Stretching</string>
 
     <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
 
@@ -16,12 +16,12 @@
     <string name="finished">You finished the workout!</string>
 
     <!-- About texts -->
-    <string name="about_part1">The 7 Minute Workout originally appeared in the May/June 2013 issue of ACSM\'s Health and Fitness Journal. The workout consists of 12 high intensity body weight exercises. 30 seconds per exercise. 10 seconds rest between exercises.</string>
-    <string name="about_part2">Remember to always check with your doctor before exercising and seek professional help to ensure correct form of the exercises.</string>
-    <string name="about_part3">The workout videos from Youtube remain the owner\'s, please support them because they do amazing work making them available.</string>
-    <string name="about_part4">Permissions Required: Internet</string>
-    <string name="about_part5">This application requires the internet in order to play Youtube videos that describe each exercise. (The Youtube application needs to be installed in order to view these videos)</string>
-    <string name="about_part6">This application requires the internet in order to use Crashlytics to collect data when and only when the application crashes. The data collected will help to identify the cause of the crash.</string>
+    <string name="about_part1">Many people want to improve overall flexibility, but do not know where to begin. This guide should serve as a general jumping-off point for beginners. If you wish you could move your limbs a little bit more, or bend just a few extra inches, this program should help.</string>
+    <string name="about_part2">A word of note: I am not haughty enough to say that this program is anywhere NEAR the quality of Starting Strength, and I am not a professional. The title is simply my attempt at a joke - don\'t read too much into it.</string>
+    <string name="about_part3">Additionally, always consult with a doctor if you have any injuries, and stop doing things if they produce pain. I am not a medical professional, and cannot afford a lawyer, so use this program at your own risk.</string>
+    <string name="about_part4">This program covers a series of 9 stretches - 3 upper body, 4 lower body, and 2 torso. Each is to be done for a total of 60 seconds. Doing this in one stretch is the best, but if you need to stretch for 30s, relax, and finish 30s, that is fine too. Try not to go lower than 20s intervals - if you can\'t do a stretch for at least 20s, lessen the intensity.</string>
+    <string name="about_part5">These stretches are to be performed in succession after every single workout. This should take only 20-30 minutes. It is recommended, however to do them every single day. If you have time, repeating the stretches 2-3 times is also recommended.</string>
+    <string name="about_part6">This exercise program is © by Aaron Griffin from phraktured.net and kindly licensed with CreativeCommons By-NC-SA, which allows for its reproduction in this app.</string>
 
     <!-- Workout names -->
     <string name="jumping_jacks">Jumping jacks</string>
