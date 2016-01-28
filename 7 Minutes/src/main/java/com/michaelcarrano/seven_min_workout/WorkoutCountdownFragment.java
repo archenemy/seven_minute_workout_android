@@ -4,6 +4,7 @@ import com.michaelcarrano.seven_min_workout.data.WorkoutContent;
 import com.michaelcarrano.seven_min_workout.widget.CircularProgressBar;
 
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -89,11 +90,15 @@ public class WorkoutCountdownFragment extends Fragment {
     }
 
     private void rest(final View rootView) {
+
         mCountDownTimer = new CountDownTimer(REST_TIME, 1000) {
+            MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.click);
+
             @Override
             public void onTick(long millisUntilFinished) {
                 REMAINING_TIME = (int) (millisUntilFinished / 1000);
 
+                mp.start();
                 TextView name = (TextView) rootView.findViewById(R.id.workout_countdown_name);
                 if (!workoutInProgress) {
                     name.setText(R.string.get_ready);
@@ -117,18 +122,23 @@ public class WorkoutCountdownFragment extends Fragment {
             @Override
             public void onFinish() {
                 workoutInProgress = true;
+                mp.release();
+
                 exercise(rootView);
             }
         };
+
         mCountDownTimer.start();
     }
 
     private void exercise(final View rootView) {
         mCountDownTimer = new CountDownTimer(EXERCISE_TIME, 1000) {
+            MediaPlayer mp = MediaPlayer.create(getContext(), R.raw.click);
+
             @Override
             public void onTick(long millisUntilFinished) {
                 REMAINING_TIME = (int) (millisUntilFinished / 1000);
-
+                mp.start();
                 TextView ready = (TextView) rootView.findViewById(R.id.workout_countdown_name);
                 ready.setText(mWorkout.name);
 
